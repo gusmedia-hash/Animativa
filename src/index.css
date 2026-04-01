@@ -8,6 +8,9 @@
 }
 
 @layer base {
+  html {
+    font-size: 18px;
+  }
   body {
     @apply bg-brand-purple text-white font-sans antialiased;
   }

@@ -11,20 +11,20 @@ import Voluntarios from "./pages/Voluntarios";
 import Projetos from "./pages/Projetos";
 import Eventos from "./pages/Eventos";
 import ProjetoDetalhes from "./pages/ProjetoDetalhes";
+import Admin from "./pages/Admin";
 
 export default function App() {
   return (
     <Router>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/iniciativas" element={<Iniciativas />} />
-          <Route path="/voluntarios" element={<Voluntarios />} />
-          <Route path="/projetos" element={<Projetos />} />
-          <Route path="/projetos/:id" element={<ProjetoDetalhes />} />
-          <Route path="/eventos" element={<Eventos />} />
-        </Routes>
-      </Layout>
+      <Routes>
+        <Route path="/" element={<Layout><Home /></Layout>} />
+        <Route path="/iniciativas" element={<Layout><Iniciativas /></Layout>} />
+        <Route path="/voluntarios" element={<Layout><Voluntarios /></Layout>} />
+        <Route path="/projetos" element={<Layout><Projetos /></Layout>} />
+        <Route path="/projetos/:id" element={<Layout><ProjetoDetalhes /></Layout>} />
+        <Route path="/eventos" element={<Layout><Eventos /></Layout>} />
+        <Route path="/admin" element={<Admin />} />
+      </Routes>
     </Router>
   );
 }

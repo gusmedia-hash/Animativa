@@ -109,6 +109,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <LogoSmall />
               </Link>
               <p className="text-xs font-black uppercase tracking-[0.4em] text-white/30">Conexões Vivas</p>
+              <Link to="/admin" className="text-[10px] font-black uppercase tracking-widest text-white/10 hover:text-brand-orange transition-colors mt-4">Painel de Manutenção</Link>
             </div>
             
             <div className="flex gap-12 text-xs font-black uppercase tracking-widest text-white/40">
